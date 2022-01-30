@@ -22,7 +22,8 @@ try {
     HTMLWebpackPlugins.push(new HTMLWebpackPlugin({
       filename: `${baseName}.html`,
       template: `${srcPath}/${baseName}.html`,
-      chunks: [`${baseName}`]
+      chunks: [`${baseName}`],
+      base: { 'href': 'https://ray1413.github.io/webpack-multi-page/dist/' },
     }))
 
   })
