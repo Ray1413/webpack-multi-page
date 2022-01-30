@@ -4,8 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development"
+    "build": "webpack --node-env production",
+    "build-gh": "webpack --node-env production --env gh",
+    "start": "webpack serve --node-env development"
   },
   "keywords": [],
   "author": "",
