@@ -8,4 +8,4 @@
   <h1>Webpack5 Multi Page</h1>
 </div>
 
-#### A simple [demo](https://ray1413.github.io/webpack-multi-page/dist/about.html "demo") about using webpack to build mutil page website (with jQuery, bootstrap and font awesome).
+#### A simple [demo](https://ray1413.github.io/webpack-multi-page/dist/ "demo") about using webpack to build mutil page website (with jQuery, bootstrap and font awesome).
