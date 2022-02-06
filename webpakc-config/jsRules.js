@@ -1,21 +1,4 @@
-const babelLoader = {
-  loader: 'babel-loader',
-  options: {
-    presets: [
-      [
-        '@babel/preset-env',
-        {
-          targets: {
-            'chrome': '88',
-            'ie': '11'
-          },
-          'corejs': '3',
-          'useBuiltIns': 'usage'
-        }
-      ]
-    ]
-  }
-}
+const babelLoader = require('./babelLoader')
 
 const jsRule = {
   test: /\.js$/,
