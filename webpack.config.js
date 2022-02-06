@@ -3,6 +3,8 @@ const htmlRule = require('./webpakc-config/htmlRule')
 const { jsRule, tsRule } = require('./webpakc-config/jsRules')
 const { cssRule, lessRule, sassRule, miniCssExtractPlugin } = require('./webpakc-config/css-rules')
 const { imgRule, fontRule } = require('./webpakc-config/asset-module')
+const extensions = require('./webpakc-config/extensions')
+const jsxRule = require('./webpakc-config/jsxRules')
 
 module.exports = env => {
   const getEntryPoint = require('./webpakc-config/entry-point')
@@ -37,6 +39,7 @@ module.exports = env => {
         sassRule,
         imgRule,
         fontRule,
+        jsxRule,
       ]
     },
     plugins: [
@@ -44,7 +47,7 @@ module.exports = env => {
       miniCssExtractPlugin,
     ],
     resolve: {
-      extensions: ['.ts', '.js']
+      extensions
     }
   }
 }

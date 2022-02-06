@@ -2,6 +2,7 @@ function getEntryPoint(gh) {
   const path = require('path')
   const fs = require('fs');
   const HTMLWebpackPlugin = require('html-webpack-plugin')
+  const extensions = require('./extensions')
 
   const srcPath = path.join(__dirname, '../src');
   const entryPoints = {}
@@ -14,10 +15,11 @@ function getEntryPoint(gh) {
     filenames.forEach(filename => {
       const baseName = path.basename(filename, '.html')
 
-      if (fs.existsSync(`${srcPath}/js/${baseName}.js`)) {
-        entryPoints[baseName] = `${srcPath}/js/${baseName}.js`
-      } else if (fs.existsSync(`${srcPath}/js/${baseName}.ts`)) {
-        entryPoints[baseName] = `${srcPath}/js/${baseName}.ts`
+      for (let i = 0; i < extensions.length; i++) {
+        if (fs.existsSync(`${srcPath}/js/${baseName}${extensions[i]}`)) {
+          entryPoints[baseName] = `${srcPath}/js/${baseName}${extensions[i]}`
+          break
+        }
       }
 
       const options = {
