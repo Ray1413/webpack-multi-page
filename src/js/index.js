@@ -1,9 +1,11 @@
-import $ from 'jquery'
 import 'bootstrap'
 import '../css/bootstrap.sass'
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all'
+import $ from 'jquery'
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
+import '@fortawesome/fontawesome-free/css/brands.min.css'
+import '@fortawesome/fontawesome-free/js/fontawesome.min'
+import '@fortawesome/fontawesome-free/js/brands.min'
 
 $(() => {
-  console.log('index.html')
+  console.log('Home page')
 })
