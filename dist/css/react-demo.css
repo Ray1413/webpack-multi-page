@@ -1,0 +1,10 @@
+#app .ant-layout-sider .ant-layout-sider-children {
+  overflow: auto;
+}
+#app .ant-layout-footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  background: #0d6efd;
+}
+

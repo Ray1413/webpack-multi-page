@@ -1,8 +1,9 @@
 import React from 'react'
+import AppLayout from './AppLayout'
 
 function App() {
   return <>
-    <h1>React App</h1>
+    <AppLayout />
   </>
 }
 
