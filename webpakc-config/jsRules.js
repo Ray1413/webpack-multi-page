@@ -1,7 +1,7 @@
 const babelLoader = require('./babelLoader')
 
 const jsRule = {
-  test: /\.js$/,
+  test: /\.js$/i,
   use: [
     babelLoader
   ],
@@ -9,7 +9,7 @@ const jsRule = {
 }
 
 const tsRule = {
-  test: /\.ts$/,
+  test: /\.ts$/i,
   use: [
     babelLoader,
     'ts-loader'

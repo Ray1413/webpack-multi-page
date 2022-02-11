@@ -5,6 +5,7 @@ const { cssRule, lessRule, sassRule, miniCssExtractPlugin } = require('./webpakc
 const { imgRule, fontRule } = require('./webpakc-config/asset-module')
 const extensions = require('./webpakc-config/extensions')
 const jsxRule = require('./webpakc-config/jsxRules')
+const markdownRule = require('./webpakc-config/markdownRule')
 
 module.exports = env => {
   const getEntryPoint = require('./webpakc-config/entry-point')
@@ -40,6 +41,7 @@ module.exports = env => {
         imgRule,
         fontRule,
         jsxRule,
+        markdownRule,
       ]
     },
     plugins: [

@@ -1,5 +1,5 @@
 const htmlRule = {
-  test: /\.html$/,
+  test: /\.html$/i,
   loader: 'html-loader',
   options: {
     interpolate: 'require',
